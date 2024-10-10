@@ -41,16 +41,15 @@ def bfs(graph):
     # Step 3: BFS Process
     iteration = 0
     while queue:
-        iteration += 1
-        current = queue.popleft()
-        L.append(current)  # Append to BFS order
-        
         # Display current state of the graph traversal
         print(f"Iteration {iteration}")
         print(f"Queue: {list(queue)}")
         print(f"Visited: {list(visited)}")
-        print(f"Current node being processed: {current}")
         print("-" * 30)
+        
+        iteration += 1
+        current = queue.popleft()
+        L.append(current)  # Append to BFS order
         
         # Explore the neighbors
         for neighbor in sorted(graph[current]):  # Sort to maintain order
