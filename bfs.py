@@ -45,6 +45,7 @@ def bfs(graph):
         print(f"Iteration {iteration}")
         print(f"Queue: {list(queue)}")
         print(f"Visited: {list(visited)}")
+        print(f"Traversed Graph: {list(L)}")
         print("-" * 30)
         
         iteration += 1
