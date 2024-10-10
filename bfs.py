@@ -43,9 +43,9 @@ def bfs(graph):
     while queue:
         # Display current state of the graph traversal
         print(f"Iteration {iteration}")
+        print(f"Traversed Graph: {list(L)}")
         print(f"Queue: {list(queue)}")
         print(f"Visited: {list(visited)}")
-        print(f"Traversed Graph: {list(L)}")
         print("-" * 30)
         
         iteration += 1
@@ -59,6 +59,7 @@ def bfs(graph):
                 queue.append(neighbor)
     
     # Final ordered list of visited nodes
+    
     print(f'BFS Traversal Order: {L}')
     return L
 
